@@ -1,0 +1,23 @@
+{
+  "name": "payme",
+  "version": "1.0.0",
+  "description": "An Employee Payment Management System",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.4.0",
+    "@eslint/js": "^8.12.0",
+    "globals": "^13.12.0"
+  }
+}
