@@ -1,2 +1,2 @@
 # Payme
-A employee  payment management
+An Employee Payment Management System
