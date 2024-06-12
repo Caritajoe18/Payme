@@ -1,5 +1,5 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
 
 
 // export default [
@@ -17,7 +17,7 @@ export default [
         ...globals.node,
       },
       ecmaVersion: 12,
-      sourceType: "module",
+      sourceType: 'module',
     },
     rules: {
       'no-console': 'off', // Allow console.log statements
