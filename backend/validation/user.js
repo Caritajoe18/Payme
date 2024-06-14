@@ -19,3 +19,13 @@ export const signUpSchema = Joi.object({
   }),
 });
 
+export const loginSchema = Joi.object({
+  email: Joi.string().email().required().messages({
+    'string.email': 'Invalid email address',
+    'string.empty': 'Email is required',
+  }),
+  password: Joi.string().pattern(new RegExp('^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$')).required().messages({
+    'string.pattern.base': 'Password must be at least 8 characters long and include at least one number and one alphabet',
+    'string.empty': 'Password is required',
+  }),
+});
