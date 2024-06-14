@@ -2,6 +2,8 @@ import express  from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import userRoutes from './routers/userRoutes.js';
+import employeeRoutes from './routers/employeeRoutes.js';
+import sortRoutes from './routers/sortRoutes.js';
 
 const app = express();
 
@@ -18,6 +20,8 @@ app.use((req, res, next) => {
   
 
 app.use('/user', userRoutes);
+app.use('/employee', employeeRoutes);
+app.use('/sort', sortRoutes);
 
 
 
